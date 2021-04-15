@@ -75,13 +75,48 @@
         </dd>
         <dt>select 다중</dt>
         <dd>
+            <select name="character" multiple>
+                <option value="jjanggu">짱구</option>
+                <option value="jadu">자두</option>
+                <option value="bread">브레드</option>
+                <option value="spongebob">스폰지밥</option>
+            
+            
+            </select>
+            
+            
         </dd>
         <dt>select + input</dt>
         <dd>
+            <input type="text" list="domain" placeholder="선택/입력">
+            <datalist id="domain"><!--select의 역할-->
+                <option value="naver.com"/>
+                <option value="kakao.com"/>
+                <option value="gmail.com"/>
+                <option value="daum.com"/>
+                <option value="nate.com"/>
+            </datalist>
         </dd>
         
         
     </dl>
+    
+    <h3>다중 행 입력</h3>
+    <!--
+        textarea 태그
+        rows="10" 행 10개
+        cols="30" 열 30개(영문 30글자, 한글 15자)
+    -->
+    자기소개<br>
+    <textarea rows="10" cols="30" name="self" placeholder="자기소개"></textarea>
+    <h3>파일첨부</h3>
+    <form method="post" enctype="multipart/form-data">
+        파일 첨부<input type="file" name="filename"><!--name 속성을 확인하면 파일명을 확인할 수 있다.-->
+        <button>submit</button>
+        
+        
+        
+    </form>
     
     
     
