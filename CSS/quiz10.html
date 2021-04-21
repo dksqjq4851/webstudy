@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>네이버 : 로그인</title>
+    <style>
+        header > div {
+            overflow: hidden;
+            background-image: url(images/naver.PNG);
+            width: 150px;
+            height: 30px;
+            background-size: cover;
+            margin: 100px auto;
+
+        }
+        section > form{
+
+            overflow: hidden;
+            width: 350px;
+            height: 170px;
+            margin: 0 auto;
+            
+        }
+        section > form > input{
+            width: 95%;
+            height: 40px;
+            margin: 5px;
+            
+        }
+                section > form > input:nth-of-type(3){
+            width: 97%;
+            margin: 5px;
+            background-color: lightgreen;
+            color: white;
+            
+        }
+        .login{
+
+            overflow: hidden;
+            width: 350px;
+            height: 40px;
+            margin: 0 auto;
+        }
+        .maintance{
+            float: left;
+            
+        }
+        .sercurity{
+            float: right;
+            
+        }
+
+        .sercurity > span{
+            color: green;
+        }
+        article > p {
+
+            overflow: hidden;
+            width: 350px;
+            height: 40px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .login2{
+
+            overflow: hidden;
+            width: 350px;
+            height: 40px;
+            margin: 0 auto; 
+        }
+        .qr{
+ 
+            float: left;
+            width: 49%;
+            height: 100%;
+        }
+        .qr > button{
+            width: 100%;
+            height: 100%;
+        }
+        .onelogin{
+            float: right;
+            width: 49%;
+            height: 100%;
+        }
+        .onelogin > button{
+                        width: 100%;
+            height: 100%;
+            
+        }
+        .etc{
+
+            width: 350px;
+            height: 40px;
+            margin: 0 auto; 
+            text-align: center;
+            font-size: 10px;
+        }
+        aside > .banner{
+            overflow: hidden;
+            background-image: url(images/banner.PNG);
+            width: 350px;
+            height: 100px;
+            background-size: cover;
+            margin: 100px auto;
+
+        }
+        footer{
+            bottom: 0;
+        }
+        footer > p {
+
+            width: 350px;
+            height: 40px;
+            margin: 0 auto; 
+            text-align: center;
+            font-size: 10px;
+            
+        }
+        footer > div{
+
+            width: 350px;
+            height: 40px;
+            margin: 0 auto; 
+            text-align: center;
+            font-size: 10px;
+        }
+        footer > div > div{
+            float: left;
+            overflow: hidden;
+            background-image: url(images/naver.PNG);
+            width: 30px;
+            height: 6px;
+            background-size: cover;
+            margin: 100px auto;
+
+        }
+        footer > div > p{
+
+            width: 350px;
+            height: 40px;
+            margin: 0 auto; 
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--전체 콘테이너-->
+    <div class="container">
+        <!--로고 영역-->
+        <header>
+            <!--로고-->
+            <div></div><!--텍스트를 이용할 시 h1-->
+        </header>
+        <!--본문 영역-->
+        <section>
+            <!--아이디, 비밀번호, 로그인버튼-->
+            <form method="post">
+                <input type="text" placeholder="아이디"><br>
+                <input type="password" placeholder="비밀번호"><br>
+                <input type="submit" value = "로그인">
+            </form>
+            <!--로그인상태유지,IP보안-->
+            <article class="login">
+                <!--로그인상태유지-->
+                <div class="maintance">◎ 로그인 상태 유지</div>
+                <!--IP보안-->
+                <div class="sercurity">IP 보안 <span>ON</span></div>
+            </article>
+            <!--더욱간편한로그인-->
+            <article>
+                <p><strong>더욱 간편한 로그인</strong></p>
+                <!--QR코드로그인, 일회용번호로그인-->
+                <div class="login2">
+                    <!--QR코드로그이-->
+                    <div class="qr">
+                        <button>QR코드 로그인</button>
+                    </div>
+                    <!--일회용번호로그인-->
+                    <div class="onelogin">
+                        <button>일회용번호로그인</button>
+                    </div>
+                </div>
+            </article>
+            <!--아이디찾기, 비밀번호찾기, 회원가입-->
+            <article class="etc">
+                <a>아이디 찾기</a> | <a>비밀번호 찾기</a> | <a>회원가입</a>
+            </article>
+            <!--광고배너-->
+            <aside>
+                <div class="banner"></div>
+            </aside>
+            <!--이용약관등-->
+            <footer>
+                <p>
+                    <a>이용약관</a> | <a><strong>개인정보처리방침</strong></a> | <a>책임의 한계와 법적고지</a> | <a>회원정보 고객센터</a>
+                </p>
+                <div>
+                    <div></div>
+                    <p>Copyright &copy; <strong>NAVER Corp.</strong> ALL Rights Reserved.</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>
