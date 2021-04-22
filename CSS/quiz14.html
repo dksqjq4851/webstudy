@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>quiz14</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;/*tkpyx95887*/
+        }
+        .product-list{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .product{
+            position: relative;
+        }
+        .product > img{
+            width: 300px;
+            height: 200px;
+            /*이미지를 뒤로 보내기 위해서 z-index값을 낮게 설정*/
+            z-index: 1;
+        }
+        .product > .product-description{
+            width: 300px;
+            height: 200px;
+            background-color: rgba(0,0,0,0.5); /*각 생상 값 : 0~255, 투명도 : 0~1*/
+            /*설명을 아으로 보내기 위해서 z-index값을 크게 설정*/
+            z-index: 2;
+            position: absolute;
+            top: 200px;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            opacity: 0;/*투명해서 안보인다.*/
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+        }
+        .product > img:hover + .product-description{
+            opacity: 1;/*보인다!*/
+            transform: translateY(-200px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-list">
+            <div class="product">
+                <img alt="과일 1 이미지" src ="images/cat.jpg">
+                <div class="product-description">
+                    <h1>과일1</h1>
+                    <p>맛있는 과일</p>
+                    <p>가격 : 10,000원</p>
+                </div>
+            </div>
+            <div class="product">
+                <img alt="과일 2 이미지" src ="images/eagle.jpg">
+                <div class="product-description">
+                    <h1>과일2</h1>
+                    <p>맛있는 과일</p>
+                    <p>가격 : 50,000원</p>
+                </div>
+            </div>
+            <div class="product">
+                <img alt="과일 3 이미지" src ="images/dog.jpg">
+                <div class="product-description">
+                    <h1>과일3</h1>
+                    <p>맛있는 과일</p>
+                    <p>가격 : 100,000원</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
