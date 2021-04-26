@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	//1.경고창
+	//alert('경고메시지');
+	//2.확인장
+	//a = confirm('확인메세지'); // 확인 버튼을 클릭하면 true 반환, 취소버튼을 클릭하면 false를 반환
+	//console.log(a);
+	//3.입력창
+	//b = prompt('입력메시지'); //입력된 내용을 반환합니다.
+	//console.log(typeof b);
+	//console.log(b);
+	
+	//이름을 입력받아서 "내 이름은 xxx입니다."
+	//나이를 입력 받아서 "성인/미성년자이고,내년나이는xx살입니다.
+	c = prompt('이름을 입력하세요');
+	d = prompt('나이를 입력하세요.');
+	alert('내 이름은' + c + '입니다');
+	alert(((d<18) ? '미성년자이고,' : '성인이고,') + '내년나이는' + (++d) + '살입니다.'); //문자열의 +연산은 무조건 연결이다.
+</script>
+</head>
+<body>
+
+</body>
+</html>
