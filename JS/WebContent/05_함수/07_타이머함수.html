@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script>
+		/* 
+			1. setTimeout(함수, 밀리초);
+			var id = setTimeout(함수, 밀리초);// id ㅡㄴ setTimeout() 함수의 식별자
+			clearTimeout(id);// setTimeout() 함수의 동작 취소
+			
+			2. 반복 실행하는 setInterval
+			1)setInterval(함수, 밀리초);
+			2)var id = setInterval(함수, 밀리초);
+			  clearInterval(id);
+		*/
+		
+		var boom = setTimeout(function(){
+			alert('펑');
+		}, 5000);
+		if (confirm('폭탄 해체 를 원하면 5초 안에 확인을 누르시오.')){
+			clearTimeout(boom);
+		}
+		//5초 타이머 폭탄 ( 5 4 3 2 1 펑)
+		var countdown = 5;
+		var boom2 = setInterval(function(){
+			if(countdown == 0){
+				document.write('펑');
+				clearInterval(boom2);
+			}else{
+				document.write(countdown-- + '&nbsp; -> &nbsp;');
+			}
+		},1000);
+		
+		function timerBoom(){
+			setTimeout(function(){}, 1000);
+			timerBoom();
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
